@@ -1,0 +1,26 @@
+#productsDeux{
+    div:first-child{
+        background-image: url(../img/cta-bg.jpg);
+        height: 650px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        button{
+            border: solid 1px red;
+            border-radius: 15px;
+            width: 8%;
+            background-color: red;
+            color: white;
+            margin-top: 15px;
+        }
+    }
+    h4{
+        text-align: center;
+        margin-top: 40px;
+    }
+}

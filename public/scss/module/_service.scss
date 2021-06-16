@@ -1,0 +1,20 @@
+.imgService{
+    width: 450px;
+    margin:0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        position: absolute;
+        color: white;
+        font-size: 36px;
+        border-bottom: solid 2px white;
+        width: 20%;
+        text-align: center;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}

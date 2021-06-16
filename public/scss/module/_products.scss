@@ -1,0 +1,34 @@
+#products{
+    margin-bottom: 90px;
+    h5{
+        text-align: center;
+        margin-top: 100px;
+        font-weight: bold;
+    }
+    .div3img{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        div{
+            .divImgProducts{
+                width: 350px;
+                margin: 20px;
+                
+                img{
+                    width: 100%;
+                }
+
+            }
+            .productsEtiqs{
+                text-align: center;
+                p{
+                    font-weight: bold;
+                }
+                span{
+                    color: red;
+                }
+            }
+        }
+    }
+}
