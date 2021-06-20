@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,81 @@
     <link rel="stylesheet" href="./public/css/app.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- class="d-flex justify-content-center" -->
-    <header>
+    <header class="monHeader">
         <div class="imgLogo">
-            <img src="./public/img/logo.png" alt="">
+            <img src="./public/img/logo.png" alt="" id="logo">
         </div>
-        <nav class="d-flex justify-content-center my-3">
+        <nav>
             <div class="navList d-flex">
-                <ul class="d-flex mb-0">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">PRODUCT</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">ELEMENTS</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-                <button class="btnMode" id="lightMode">
-                <button class="btnMode" id="darkMode">
-                <button class="btnConex">connexion</button>
+                <div>
+                    <img src="./public/img/logo.png" alt="" id="imgDispNone">
+                </div>
+                <div>
+                    <ul class="mb-0">
+                        <li><a href="" class="myDark">HOME</a></li>
+                        <li><a href="" class="myDark">PRODUCT</a></li>
+                        <li><a href="" class="myDark">BLOG</a></li>
+                        <li><a href="" class="myDark">ELEMENTS</a></li>
+                        <li><a href="" class="myDark">ABOUT</a></li>
+                        <li><a href="" class="myDark">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div id="mybtnMode">
+                    <button class="btnMode" id="lightMode">
+                        <button class="btnMode" id="darkMode">
+                            <button class="btnConex">Connexion</button>
+                </div>
             </div>
         </nav>
     </header>
-    <section id="banner">
-        <div class="divWidth d-flex">
+
+    <!-- Fenetre de connexion/inscription -->
+    <div id="co">
+        <div class="myDivLogoParent">
+            <img src="./public/img/logo.png" alt="" id="logoCo" />
+            <button id="clear">X</button>
+        </div>
+        <div id="btnSignIn">
+            <button id="signIn" class="myDark myLight">Sign In</button>
+            <button id="signUp">Sign Up</button>
+        </div>
+        <div class="pull">
+            <span>Mail</span>
+            <label for="email"><input type="text" /></label>
+            <br>
+            <span>Password</span>
+            <label for="password"><input type="text" /></label>
+            <div id="mySignUp">
+                <span>confirm password</span>
+                <label for="password"><input type="text" /></label>
+                <div>
+                    <input type="checkbox" /><span>male</span>
+                    <input type="checkbox" /><span>Female</span>
+                </div>
+            </div>
+            <div>
+                <input id="myInput" type="checkbox" /><span>Remember</span>
+            </div>
+            <button>Submit</button>
+        </div>
+    </div>
+    <!-- sign in -->
+    <section id="banner" class="myLight">
+        <div class="divWidth d-flex myLight">
             <div>
                 <h3 class="text-danger">Shop At</h3>
-                <h1>emporium.</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem, sint, expedita, omnis ullam amet facilis repellendus blanditiis provident nesciunt?</p>
+
+                <img src="./public/img/logo.png" alt="" id="logo">
+                <p class="myDark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem,
+                    sint, expedita,
+                    omnis ullam amet facilis repellendus blanditiis provident nesciunt?</p>
                 <button>SALE ITEMS</button>
             </div>
             <div class="divImgBanner">
-                <img src="./public/img/slider-1.jpg" alt="">
+                <img src="./public/img/slider-1Trans.png" alt="">
             </div>
         </div>
     </section>
@@ -57,143 +101,292 @@
         </div>
     </section>
     <section id="products">
-        <h5>Recents Products</h5>
+        <h5 class="myDark">Recents Products</h5>
         <div class="div3img">
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Luxury Sofa</p>
+                    <p class="myDark">Luxury Sofa</p>
                     <span>$600.00</span>
                 </div>
             </div>
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-gloves.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Leather Gloves</p>
+                    <p class="myDark">Leather Gloves</p>
                     <span>$27.00</span>
                 </div>
             </div>
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-cups.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="" class="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Colorful Bowl</p>
+                    <p class="myDark">Colorful Bowl</p>
                     <span>$18.00</span>
                 </div>
             </div>
         </div>
         <div class="div3img">
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-bag.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Women Bag</p>
+                    <p class="myDark">Women Bag</p>
                     <span>$350.00</span>
                 </div>
             </div>
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Minimal T-shirt</p>
+                    <p class="myDark">Minimal T-shirt</p>
                     <span>$15.00</span>
                 </div>
             </div>
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-plates.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Plates Set</p>
+                    <p class="myDark">Plates Set</p>
                     <span>$30.00</span>
                 </div>
             </div>
         </div>
         <div class="div3img">
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Modern Sofa</p>
+                    <p class="myDark">Modern Sofa</p>
                     <span>$900.00</span>
                 </div>
             </div>
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-bed.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Bed Linen</p>
+                    <p class="myDark">Bed Linen</p>
                     <span>$79.00</span>
                 </div>
             </div>
-            <div>
+            <div class="divParentProducst">
                 <div class="divImgProducts">
                     <img src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    <div class="contentDetails">
+                        <div class="divDflex">
+                            <div class="details">
+                                <a href="">Details</a>
+                            </div>
+                            <div class="panier">
+                                <a href="">Panier</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="productsEtiqs">
-                    <p>Minimal Shoes</p>
+                    <p class="myDark">Minimal Shoes</p>
                     <span>$60.00</span>
                 </div>
             </div>
         </div>
     </section>
     <section id="productsDeux">
-        <div >
+        <div class="bgCover">
             <h2>Discover Thounsands Of Great Products</h2>
             <button>LEARN MORE</button>
         </div>
-        <div>
-            <h4>Hot Fashion Products</h4>
+    </section>
+    <section>
+
+        <div class="sectCarousel">
+            <h4 class="myDark">Hot Fashion Products</h4>
             <!-- caroussel js -->
-        </div>
+            <div class="carousel">
+                <div class="containerCarousel">
+
+                    <div class="carouselInner">
+                        <div class="item">
+                            <div class="imgItem">
+                                <img src="./public/img/products/product-bag-2-700x500.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carouselInner">
+                        <div class="item">
+                            <div class="imgItem">
+                                <img src="./public/img/products/product-bag-2-700x500.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carouselInner">
+                        <div class="item">
+                            <div class="imgItem">
+                                <img src="./public/img/products/product-bag-2-700x500.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carouselInner">
+                        <div class="item">
+                            <div class="imgItem">
+                                <img src="./public/img/products/product-bag-2-700x500.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carouselInner">
+                        <div class="item">
+                            <div class="imgItem">
+                                <img src="./public/img/products/product-bag-2-700x500.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carouselInner">
+                        <div class="item">
+                            <div class="imgItem">
+                                <img src="./public/img/products/product-bag-2-700x500.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myButtons " >
+                    <button class="myBtn" onclick="currentSlide(1)"></button>
+                    <button class="myBtn" onclick="currentSlide(2)"></button>
+                    <button class="myBtn" onclick="currentSlide(3)"></button>
+                    <button class="myBtn" onclick="currentSlide(4)"></button>
+                </div>
+            </div>
     </section>
     <section id="lastSection">
         <div>
             <!-- icon -->
             <h5>TRSUTED BY 10,000+ CUSTOMERS</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia optio tenetur hic sunt corporis minima molestiae assumenda minus excepturi perferendis.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia optio tenetur hic sunt corporis minima
+                molestiae assumenda minus excepturi perferendis.</p>
             <button>LEARN MORE</button>
         </div>
-        <div>
+        <div id="divShipping">
             <!-- icon -->
             <h5>VERY FAST SHIPPING</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia optio tenetur hic sunt corporis minima molestiae assumenda minus excepturi perferendis.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia optio tenetur hic sunt corporis minima
+                molestiae assumenda minus excepturi perferendis.</p>
             <button>LEARN MORE</button>
         </div>
         <div>
             <!-- icon -->
             <h5>TRSUTED BY 10,000+ CUSTOMERS</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia optio tenetur hic sunt corporis minima molestiae assumenda minus excepturi perferendis.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia optio tenetur hic sunt corporis minima
+                molestiae assumenda minus excepturi perferendis.</p>
             <button>LEARN MORE</button>
         </div>
     </section>
     <footer>
-        <div>
-
-            <div>
-                <h5>ABOUT US</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium nemo vel aperiam inventore ea molestias dolor accusamus alias architecto earum doloremque quidem, mollitia facilis omnis dolorum iste et enim cumque eos corporis voluptatum. Officia id nesciunt rerum numquam quis.</p>
+        <div id="divFooter">
+            <div id="firstDivFooter">
+                <p>ABOUT US</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium nemo vel aperiam inventore
+                    ea molestias dolor accusamus alias architecto earum doloremque quidem, mollitia facilis omnis
+                    dolorum iste et enim cumque.</p>
             </div>
-            <div>
-                <h5>RECENTS POSTS</h5>
-                <ul>
-                    <li>Hello World</li>
-                    <li>Wondeful serenity has taken</li>
-                    <li>In my soul and absorb its power</li>
-                    <li>I hear the buzz of the little</li>
-                </ul>
+            <div id="secondDivFooter">
+                <p>RECENTS POSTS</p>
+                <ol>
+                    <li>&nbsp; >Hello World</li>
+                    <li>&nbsp; >Wondeful serenity has taken</li>
+                    <li>&nbsp; >In my soul and absorb its power</li>
+                    <li>&nbsp; >I hear the buzz of the little</li>
+                </ol>
             </div>
-            <div>
-                <h5>TAG CLOUD</h5>
+            <div id="thirdDivFooter">
+                <p>TAG CLOUD</p>
                 <button>business</button>
                 <button>confidence</button>
                 <button>gadgets</button>
@@ -206,16 +399,20 @@
                 <button>work space</button>
             </div>
         </div>
-        <div>
-            <p>COPYRIGHT 2020 GOODPLAYERS, ALL RIGHT RESERVED</p>
-        </div>
     </footer>
+    <div class="bg-dark">
+        <p class="text-light">copyright</p>
+    </div>
     <!-- jquery -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <!-- bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- javascript -->
-    <script type="module" src="./public/js/main.js"></script>
+    <script src="./public/js/form.js"></script>
+    <script src="./public/js/carousel.js"></script>
+    <script src="./public/js/darkMode.js"></script>
+    <script src="./public/js/main.js"></script>
 </body>
+
 </html>
